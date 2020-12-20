@@ -33,7 +33,7 @@ SECRET_KEY = 'dk&0t#rr^u#o7n6a5pmf@q3nxuh1$5(n&0z9u0crk7!z#euisl'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['deliciasdemina.herokuapp.com' , '127.0.0.1' , 'lasdeliciasdemina.com']
+ALLOWED_HOSTS = ['deliciasdemina.herokuapp.com' , '127.0.0.1' , 'lasdeliciasdemina.com' , 'www.lasdeliciasdemina.com' ]
 
 
 # Application definition
