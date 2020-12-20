@@ -1,0 +1,861 @@
+
+.info{
+    
+}
+
+body{
+    font-family: 'Pacifico', cursive;
+    color:black;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),url("../img/web3-limoncocha-amazonia-ecuador-shutterstock_540976720-por-ecuadorpostales.jpg")no-repeat ;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position:center center;
+    
+}
+
+#top{
+    
+    
+}
+
+.tibo{
+    font-family: sans-serif;
+}
+
+
+.primary-color{
+    color:white;
+}
+.second-color{
+color: #ff3333;
+}
+.info h2 {
+    word-spacing: 0.4rem;
+    font-size: 25px
+}
+
+.info a {
+    transition: color 2s ease-in-out;
+}
+.info a :hover{
+    color: #ff3333;
+}
+/*######header######*/
+#header{
+    min-height: calc( 100vh - 94px );
+    background: url(../index.html);
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.heigt-90{
+    min-height: calc( 100vh - 94px ); 
+}
+.banner h1{
+    animation: fromLeft;
+    animation-duration:4s;
+    animation-delay:2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    color:#ff3333;
+    font-size: 90px;
+}
+    
+    @keyframes fromLeft {
+        0%{
+            transform: translateX(-100px);
+            opacity:0;
+        }
+        50%{
+            transform: translateX(30px);
+        }
+        100%{
+            transform: translateX(0);
+            opacity:1; 
+        }
+    }   
+    
+}
+@media (max-width: 768px){
+   .banner h1 {
+    font-size: 50px;
+        
+            } 
+}
+
+@media (max-width:992px){
+   .banner h1 {
+    font-size: 50px;
+        
+            } 
+}    
+
+.main-btn{
+    color:;
+    font-size:20px;
+    transition: all 1s ease-in-out;         
+}
+.main-btn:hover{
+    color:red;
+    border: 2px solid #c9c1ac;
+    background: #c9c1ac;
+      }   
+.logo img{
+    width: 400px;
+    height: 300px;
+}        
+.sushi-btn{
+    animation: fromRight;
+    animation-duration:4s;
+    animation-delay:2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+
+    @keyframes fromRight {
+         0%{
+            transform: translateX(100px);
+            opacity:0;
+        }
+        50%{
+            transform: translateX(-30px);
+        }
+        100%{
+            transform: translateX(0);
+            opacity:1; 
+        }
+   
+}
+.checked {
+  color: orange;
+}
+.header-link{
+display: inline-block;
+position: absolute;
+bottom:15%;
+left:50%;
+background: #c9c1ac;
+border-radius: 10px;
+transition: all 2s ease;
+animation: frombottom;
+animation-duration: 4s;
+animation-iteration-count: infinite;    
+    
+}
+.header-link: hover {
+    
+    color: black;
+}
+
+@keyframes frombottom{
+        0%{
+            transform: translateY(-10px);
+        }
+        50%{
+            transform: translateY(10px);
+        }
+        100%{
+            transform: translateY(-10px);
+     
+            }
+    }
+#about{
+    background: rgb(230, 230, 230);
+}
+/*######navbar######*/
+.navbar{
+background: rgb(230, 230, 230);
+padding: 20px 20px;
+transition: all 1s ease    
+}
+.navbar-background{
+    padding: 5px 20px;
+}
+.navbar-brand{
+    font-size: 18px;
+    transition: all 1s ease; 
+}
+.nav-link{
+    color: black;
+    text-decoration: none;
+    font-size: 23px;
+}
+.nav-link:hover{
+    color:red;
+    border-bottom: 2px solid red;
+}
+.nav-btn{
+    background: transparent;
+    color: red;
+    border : 2px solid red;
+    font-size: 23px;
+    transition: all 2s ease;   
+}
+.nav-btn:hover{
+    background: transparent;
+    color: black;
+    border : 2px solid black; 
+}
+.toggler-btn{
+    border: 2px solid red;
+    padding: 5px;
+    transition: all 2s ease;
+        
+}
+.bar{
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: red;
+    transition: all 0.5s ease;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    transform: rotate(45deg) translate(-5px,-8px);
+}
+
+
+/*######menu items ######*/
+
+.item-container{
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgb(0,0,0),rgb(0,0,0));
+    transition: all 2s ease;
+    
+}
+.item-img{
+    transition: all 2s ease;
+    opacity: 0,2;
+}
+.item-container:hover .item-img{
+    transform: scale(1.2);
+    opacity: 0,2;
+        
+} 
+
+.item-link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:black;
+    font-size: 2rem;
+    border: 2px solid white ;
+    transition:  all 2s ease;
+    opacity: 0;
+    
+}
+.item-container:hover .item-link {
+    opacity: 1;
+    background:#c9c1ac;
+}
+.item-link:hover{
+  color:#c9c1ac;
+  border: 3px solid #c9c1ac;
+  background:#c9c1ac;
+  color:black; 
+}
+.item-container:hover{
+outline: 4px solid white;
+outline-offset: 0,8rem;    
+}
+/*######menu ######*/
+#menu{  
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/Ecuador-Amazonia-abre.jpg");
+    background-size: cover;
+    background-attachment:fixed;
+    background-position:center center;
+    background-position:50% 50%;
+    
+}
+
+/*######about ######*/
+.about-pictures{
+    position: relative;
+}
+.about-image{
+    position: absolute;
+    width: 150px;
+    transition: : all 2s ease ;
+    opacity: 0.9;
+}
+.img-1{
+    left:0%;
+    top: 0%;
+}
+.img-2{
+    left: 20%;
+    top:20%;
+    z-index: 10;    
+}
+.img-3{
+    left: 40%;
+    top:45%;
+    z-index: 20;    
+}
+.img-4{
+    left: 40%;
+    top:0%;
+      
+}
+.img-5{
+    left: 0%;
+    top:45%;
+    
+}
+.about-image:hover{
+    outline: 10px solid black ;
+    outline-offset: 0.8rem;
+    transform:scale(1.3) rotate(20deg);
+    z-index: 30;
+    opacity: 1;
+}
+.about-pictures:hover .about-image:not(:hover){
+    opacity: 0.5;
+}
+#back-to-top{
+    background: #c9c1ac;
+    border-radius: 10px;
+    display:inline-block;
+    z-index: 1;
+    opacity: 0.5;
+     
+}
+#back-to-top:hover{
+    opacity: 1;
+    
+}
+.scrollTop {
+   position: fixed;
+    bottom: 100px;
+    right: 10px;
+ }
+
+/*######testimonial ######*/
+#reviews{
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/Ecuador-Amazonia-abre.jpg");
+    background-size: cover;
+    background-attachment:fixed;
+    background-position:center center;
+    background-position:50% 50%;
+}
+
+.testimonial-area{
+    padding: 50px 0;
+    position: relative;
+    
+}
+.single-testimonial{
+    color: #fff;
+    padding-left: 75px;
+    position: relative;
+    margin: 0 15px 15px;
+    
+}
+.img-area{
+    border-radius: 50%;
+    height: 150px;
+    left: 0;
+    margin-top: 20px;
+    position: absolute;
+    top: 30;
+    width: 120px;
+        
+}
+.testi-text{
+    background: grey;
+    padding: 40px 20px 40px 100px;
+    color: black;
+    border-radius: 100px 0 100px 0;
+}
+.img-area > img{
+    background: linear-gradient(to bottom, #ff3333, white);
+    border-radius: 50%;
+    padding: 5px;
+}
+.testi-text h4{
+    font-size : 30px;
+    margin-bottom: 30px;
+    font-family:'Pacifico', cursive;
+    
+}
+.testi-text p{
+    font-family:'Rancho', cursive;
+    line-height: 25px;
+    font-size: 20px;
+}
+.single-testimonial:hover .testi-text{
+    background: #fff;
+    transition: 0.9s
+}
+.testimonial-area div.owl-nav{
+    color: grey;
+    display: inline-block;
+    font-size: 55px;
+    height: 60px;
+    margin-top: -30px;
+    text-align: center;
+    width: 40px;
+    transition: 0.3s;
+    
+}
+.owl-prev, .owl-next{
+    position: absolute;
+}
+.owl-prev{
+    left: -30px;
+    top : 50px;
+}
+.owl-next{
+    right: -30px;
+    top : 50px;
+}
+@media only screen and (max-width: 767px){
+    .testimonial-area{
+        padding: 15px 0;
+    }
+    .single-testimonial{
+        padding-left: 0;
+        padding-top: 75px;
+        
+    }
+    .img-area{
+        left:25%;
+        margin-left:0;
+        top:0px;
+            
+    }
+    .testi-text{
+        padding: 80px 25px 25px;
+    }
+    .testi-text p{
+        font-size: 16px;
+    }
+    .owl-prev{
+        left: -13px;
+        top:120px;
+    }
+    .owl-next{
+        right: -13px;
+        top:120px;
+        
+    }
+}
+.about-main{
+	background:#E6E6E6;
+}
+.pad-top-100{
+    padding-top: 90px;
+}
+.pad-bottom-100{
+	padding-bottom: 90px;
+}
+
+.pad-top-70{
+	padding-top: 70px;
+}
+.pad-bottom-70{
+	padding-bottom: 70px;
+}
+
+.block-title {
+    position: relative;
+    top: -10px;
+	font-size:30px;
+	font-family: 'Pacifico', cursive;
+	color: #ff3333;
+}
+.texto-about p{
+    font-family: 'Rancho', cursive;
+}
+.about-images {
+    text-align: center;
+    position: relative;
+
+}
+
+.about-main p{
+    font-weight: 100;
+	font-size:20px;
+}
+
+.left-btn{
+	padding-top:10px;
+}
+
+
+.about-images img {
+    border: 10px solid #f1f1f1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+    height: 320px;
+}
+
+.about-images img {
+    border: 10px solid #f1f1f1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+	max-width: 100%;
+  }
+
+.about-inset {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.horarios{
+    background: #fff;
+    
+}
+.pricing-box{
+    position: relative;
+    background: url("../img/menu.png") no-repeat ; 
+    background-size:cover;
+    padding:40px 40px 150px 100px;
+     
+}
+.price{
+    width: 200px;
+    position: relative;
+    top: -20px;
+    left: 100px;
+    font-size: 30px;
+    
+}
+.features-list{
+    position: relative;
+    right: -30%;
+    word-spacing: 0.3rem;
+    width: 300px;
+    font-size: 25px;
+    font-family:'Rancho', cursive;
+    border-bottom:1px solid grey;
+    
+}
+@media only screen and (max-width: 767px){
+    .price{
+    width: 100px;
+    font-size: 2vh;
+    left: 50%;    
+     }
+    .features-list{
+    width: 150px;
+    font-size: 14px;
+    right: -50px;    
+    }
+}
+#mimi{
+    background: #fff;
+}
+.horarios div.owl-nav{
+    color: grey;
+    display: inline-block;
+    font-size: 55px;
+    height: 60px;
+    margin-top: -30px;
+    text-align: center;
+    width: 40px;
+    transition: 0.3s;
+}
+.owl-dots{
+    text-align: center;
+}
+.owl-carousel button.owl-dot{
+    display: inline-block;
+    width: 15px;
+    background: grey !important;
+    height: 15px;
+    border-radius: 50%;
+    margin: 50px 5px ;
+}
+.owl-carousel button.owl-dot.active{
+    background-color:black !important;
+    
+    
+}
+
+#testimonial-carousa .owl-nav button.owl-next {
+    right: 20px;
+    top : 300px;
+    
+}
+#testimonial-carousa .owl-nav button.owl-prev {
+    left: 20px;
+    top : 300px;
+  }
+
+#map{
+    width: 700px;
+    height: 300px;
+}
+#Ubicacion{
+    background: rgb(230, 230, 230);
+}
+.owl-carousel button.owl-dot.active{
+    background-color:black !important;
+}
+#galeria div.owl-nav{
+    color:  grey;
+    display: inline-block;
+    font-size: 55px;
+    height: 60px;
+    margin-top: -30px;
+    text-align: center;
+    width: 40px;
+    transition: 0.3s;
+}
+#testimonial-galerie .owl-nav button.owl-next {
+    right: 35%;
+    top : 290px;
+    
+}
+#testimonial-galerie .owl-nav button.owl-prev {
+    left: 35%;
+    top : 290px;
+}
+@media only screen and (max-width: 767px){
+    #testimonial-galerie .owl-nav button.owl-next {
+    right: 35%;
+    top : 350px;
+    
+}
+    #testimonial-galerie .owl-nav button.owl-prev {
+    left: 35%;
+    top : 350px;
+}
+}
+#galeria{
+    background: #fff;
+}
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:20px;
+  line-height:24px;
+  color:#737373;
+  font-family:'Rancho', cursive;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:20px;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  text-align:center;
+  margin-right:8px;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+
+.social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+.single-galerie{
+    display: grid;
+    margin: 50px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
+    border: 2px solid white;
+}
+
+.img-galerie img{
+    margin: auto;
+    height: 250px;
+    width: 100%;
+    
+}
+.owl-item .single-galerie:hover{
+  -webkit-transform:rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+.polaroid{  
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  border-radius: 5%;     
+}
+.polaroid img{
+    height:400px;
+    width: 100%;
+    
+}
+.reco{
+  text-align: center;
+  padding: 10px 20px;
+  font-family:'Rancho', cursive;
+  font-size: 20px;          
+}
+#reconocimiento{
+     background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/Ecuador-Amazonia-abre.jpg");
+    background-size: cover;
+    background-attachment:fixed;
+    background-position:center center;
+    background-position:50% 50%;
+    
+}
+
+@media (max-width: 768px){
+   .reco p{
+    font-size: 10px;
+        
+            } 
+}
+
+@media (max-width:992px){
+   .reco p {
+    font-size: 14px;
+        
+            } 
+}  
+#WAButton{
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+    opacity: 0.5;
+}
+#WAButton:hover{
+    opacity: 1;
+}
